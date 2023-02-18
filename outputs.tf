@@ -19,5 +19,5 @@ output "subnetcount" {
 }
 
 output "subnet_id" {
-    value = aws_subnet.subnets[1]
+    value = aws_subnet.subnets[1].id
 }
