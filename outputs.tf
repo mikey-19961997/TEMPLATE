@@ -17,3 +17,7 @@ output "subnets_name" {
 output "subnetcount" {
     value = length(var.subnet_details.Name)
 }
+
+output "subnet_id" {
+    value = aws_subnet.subnets[1]
+}
